@@ -1,12 +1,23 @@
-# Starter Next/Hardhat Project
+# Assessment Smart Contract
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+## Overview
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+The Assessment smart contract is a simple Ethereum smart contract written in Solidity. It provides basic functionality for managing an account balance, depositing, withdrawing, and buying items. The contract also includes events for key transactions.
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+## Contract Details
+
+- **Contract Name:** Assessment
+- **Solidity Version:** ^0.8.9
+- **SPDX-License-Identifier:** UNLICENSED
+
+## Features
+
+1. **Deposit:** Allows the owner to deposit funds into the contract.
+2. **Withdraw:** Allows the owner to withdraw funds from the contract, subject to a check for sufficient balance.
+3. **Buy Item:** Allows the owner to buy items with predefined prices, deducting the corresponding amount from the balance.
+
+## Events
+
+- **Deposit:** Emitted when a deposit is made.
+- **Withdraw:** Emitted when a withdrawal is made.
+- **ItemBought:** Emitted when an item is successfully purchased.
